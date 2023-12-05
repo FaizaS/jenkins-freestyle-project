@@ -24,11 +24,11 @@ pipeline {
                 sh './run2.sh'
             }
         }        
-
+    }
         post {
             always {
                 archiveArtifacts '*.zip'
             }
         }
     }
-}
+
