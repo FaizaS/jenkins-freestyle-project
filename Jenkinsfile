@@ -21,8 +21,16 @@ pipeline {
         stage('Run Script') {
             //This runs a script
             steps {
-                sh 'sh ./run.sh'
+                //sh 'sh ./run.sh'
                 sh 'sh ./run2.sh'
+            }
+        }
+
+        stage('check'){
+            steps{
+                sh 'pwd'
+                sh 'ls -lrth'
+                echo 'check completed'
             }
         }        
     }
