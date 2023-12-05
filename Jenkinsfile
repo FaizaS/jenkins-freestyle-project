@@ -21,7 +21,8 @@ pipeline {
         stage('Run Script') {
             //This runs a script
             steps {
-                sh './run2.sh'
+                sh 'sh ./run.sh'
+                sh 'sh ./run2.sh'
             }
         }        
     }
